@@ -1,1187 +1,233 @@
 
-
-
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href='https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:32,height:32/https://www.filepicker.io/api/file/tkY0uCwATwquRaiYhZTM' rel='icon' type='image/png'>
-<link href='https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:72,height:72/https://www.filepicker.io/api/file/tkY0uCwATwquRaiYhZTM' rel='apple-touch-icon' type='image/png'>
-<link href='https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:144,height:144/https://www.filepicker.io/api/file/tkY0uCwATwquRaiYhZTM' rel='apple-touch-icon' type='image/png'>
-<link href='https://assets.teachablecdn.com/splash-images/teachable-apple-startup-image.png' rel='apple-touch-startup-image' type='image/png'>
-<link href='https://assets.teachablecdn.com/splash-images/teachable-apple-startup-image_2x.png' rel='apple-touch-startup-image' type='image/png'>
-<meta name='apple-mobile-web-app-capable' content='yes' />
-<meta charset="UTF-8">
-<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="VgOv0QC5sYvIBEkU100vonlRGULLcSjAAe+IDy01+lzjJBCwPI3KhNbLWY823rkOie7mll/q7WDOz9oocWckZQ==" />
-<style type='text/css'>:root{--brand_primary: #2b3636;--brand_secondary: #09A59A;--brand_heading: #2b3636;--brand_text: #2b3636;--brand_navbar_text: #ffffff;--brand_navbar_fixed_text: #ffffff;--brand_homepage_heading: #ffffff;--brand_course_heading: #ffffff;--brand_video_player_color: #09A59A;--font_family:Proxima;} @font-face {
-  font-family: 'Proxima';
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
+<!--[if IE 7]>
+<html class="ie ie7" dir="rtl" lang="ar">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" dir="rtl" lang="ar">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html dir="rtl" lang="ar"class="tcb">
+	<!--<![endif]-->
+	<head>
+				<meta charset="UTF-8"/>
+								
+						<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-@font-face {
-  font-family: 'Proxima';
-  font-style: italic;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 300;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 600;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 600;
-  font-style: italic;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: bold;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: bold;
-  font-style: italic;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 900;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
+		<title>funnelvideoseries3 &#8211; هاني حسين</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="هاني حسين &laquo; الخلاصة" href="https://www.hanyhussain.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="هاني حسين &laquo; خلاصة التعليقات" href="https://www.hanyhussain.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hanyhussain.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
 </style>
-<link rel="stylesheet" media="screen" href="https://fedora.teachablecdn.com/assets/pages-eb3f94164dd293e6d2058063bfaab3cb59341d674982ca2c7f375698deff5e54.css" />
-<style></style>
-<title>Biaheza&#39;s Dropshipping Course | Biaheza</title>
-<link rel="canonical" href="https://biaheza.teachable.com/">
-<meta property="og:title" content="Biaheza&#39;s Dropshipping Course">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://www.filepicker.io/api/file/8uVnZTKSLiLeyChlauwT">
-<meta property="og:url" content="https://biaheza.teachable.com/p/biaheza-s-dropshipping-course">
-<meta name="brand_video_player_color" content="#09A59A">
-<meta name="site_title" content="Biaheza">
-<script src='//fast.wistia.com/assets/external/E-v1.js'></script>
-<script src='https://www.recaptcha.net/recaptcha/api.js' async defer></script>
-
-
-      <meta name="asset_host" content="https://fedora.teachablecdn.com">
-     <script src="https://fedora.teachablecdn.com/packs/pages-0ceda77cc0c0d75ed058.js"></script>
-
-
-
-
-<script>
-  if(typeof ga != 'function') {
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  }
-  ga('create', 'UA-44397410-1', 'auto', {'name': 'fedoraTracker', 'allowLinker': true});
-  ga('fedoraTracker.set', 'anonymizeIp', false);
-  ga('fedoraTracker.require', 'linker');
-  ga('fedoraTracker.linker:autoLink', ['biaheza.teachable.com'] );
-  ga('fedoraTracker.require', 'ecommerce');
-  ga('fedoraTracker.require', 'ec');
-  ga('fedoraTracker.send', 'pageview');
-  ga('create', 'UA-44397410-4', 'auto', {'name': 'teachableTracker', 'allowLinker': true});
-  ga('teachableTracker.set', 'anonymizeIp', false);
-  ga('teachableTracker.require', 'linker');
-  ga('teachableTracker.linker:autoLink', ['biaheza.teachable.com'] );
-  ga('teachableTracker.require', 'ecommerce');
-  ga('teachableTracker.require', 'ec');
-  ga('teachableTracker.send', 'pageview');
+	<link rel='stylesheet' id='tve_landing_page_base_css-css'  href='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/landing-page/templates/css/base.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-rtl-css'  href='https://www.hanyhussain.com/wp-includes/css/dist/block-library/style-rtl.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-rtl-css'  href='https://www.hanyhussain.com/wp-includes/css/dist/block-library/theme-rtl.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tve_style_family_tve_flt-css'  href='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/editor/css/thrive_flat.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woohoo-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Oswald%3A400%2C300%2C700%7CLato%3A400%2C300%2C700%2C900%7CWork+Sans%3A400%2C300%2C500%2C600%2C700%2C800%2C900%7COpen+Sans%3A400%2C600%2C700%2C800%7CPlayfair+Display%3A400%2C700%2C900%2C400italic%7CRaleway%3A400%2C300%2C500%2C600%2C700%2C800%2C900%7CRoboto%3A400%2C300%2C100%2C700%7CMontserrat%3A400%2C700&#038;subset=latin%2Cgreek%2Cgreek-ext%2Cvietnamese%2Ccyrillic-ext%2Clatin-ext%2Ccyrillic' type='text/css' media='all' />
+<link rel='stylesheet' id='woohoo-default-css'  href='https://www.hanyhussain.com/wp-content/themes/woohoo/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wooohoo-ilightbox-skin-css'  href='https://www.hanyhussain.com/wp-content/themes/woohoo/css/ilightbox/dark-skin/skin.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wooohoo-ilightbox-skin-black-css'  href='https://www.hanyhussain.com/wp-content/themes/woohoo/css/ilightbox/metro-black-skin/skin.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/plupload/moxie.min.js' id='moxiejs-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/plupload/plupload.min.js' id='plupload-js'></script>
+<script type='text/javascript' id='jquery-core-js-extra'>
+/* <![CDATA[ */
+var bd_w_blocks = {"bdaia_w_ajax_url":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","bdaia_w_ajax_nonce":"c66fb79461"};
+var bd_blocks = {"bdaia_ajax_url":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","bdaia_ajaxnonce":"c66fb79461"};
+var bd_script = {"post_id":"11484","ajaxurl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
 </script>
-
-<meta id='iris-url' data-iris-url=https://eventable.teachable.cloud />
-<link href="/blog/rss" rel="alternate" title="RSS Feed" type="application/rss+xml" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  </head>
-  <body>
-          <meta http-content='IE=Edge' http-equiv='X-UA-Compatible'>
-      <meta content='width=device-width,initial-scale=1.0,user-scalable=no' name='viewport'>
-<meta id="fedora-keys" data-commit-sha="eed132ab918d227c0a649f54610365d16ab769e0" data-env="production" data-sentry-public-dsn="https://8149a85a83fa4ec69640c43ddd69017d@sentry.io/120346" data-stripe="pk_live_hkgvgSBxG4TAl3zGlXiB1KUX" data-track-all-ahoy="false" data-track-changes-ahoy="false" data-track-clicks-ahoy="false" data-track-sumbits-ahoy="false" data-filepicker="ADNupMnWyR7kCWRvm76Laz" data-taxamo="public_3adAdeo6B9dUufD_mJMEMkTXmxbK-vffcybxQEvrshk" data-iris-url="https://eventable.teachable.cloud" /><meta id="fedora-data" data-report-card="{}" data-course-ids="[]" data-completed-lecture-ids="[]" data-school-id="430575" data-school-launched="true" data-preview="logged_out" data-turn-off-fedora-branding="false" data-plan-supports-whitelabeling="true" data-powered-by-text="Powered by" data-asset-path="//https://fedora.teachablecdn.com/assets/footer/teachable-logomark-white-31d2296978598bacace50e6d48a2e1223c20a9b074af424acdd465676f81560f.svg" data-school-preferences="{&quot;ssl_forced&quot;:&quot;true&quot;,&quot;bazaar_enabled&quot;:&quot;false&quot;,&quot;paypal_enabled&quot;:&quot;false&quot;,&quot;autoplay_lectures&quot;:&quot;true&quot;,&quot;comments_threaded&quot;:&quot;true&quot;,&quot;course_blocks_beta&quot;:&quot;true&quot;,&quot;eu_vat_tax_enabled&quot;:&quot;false&quot;,&quot;legacy_back_office&quot;:&quot;false&quot;,&quot;themeable_disabled&quot;:&quot;false&quot;,&quot;back_office_enabled&quot;:&quot;false&quot;,&quot;comments_moderation&quot;:&quot;false&quot;,&quot;eu_vat_tax_eligible&quot;:&quot;true&quot;,&quot;charge_exclusive_tax&quot;:&quot;true&quot;,&quot;send_receipts_emails&quot;:&quot;true&quot;,&quot;autocomplete_lectures&quot;:&quot;false&quot;,&quot;class_periods_enabled&quot;:&quot;false&quot;,&quot;authors_can_manage_pbc&quot;:&quot;true&quot;,&quot;css_properties_enabled&quot;:&quot;false&quot;,&quot;preenrollments_enabled&quot;:&quot;false&quot;,&quot;new_text_editor_enabled&quot;:&quot;false&quot;,&quot;require_terms_agreement&quot;:&quot;true&quot;,&quot;send_new_comment_emails&quot;:&quot;true&quot;,&quot;send_drip_content_emails&quot;:&quot;true&quot;,&quot;ssl_forced_from_creation&quot;:&quot;true&quot;,&quot;turn_off_fedora_branding&quot;:&quot;false&quot;,&quot;allow_comment_attachments&quot;:&quot;true&quot;,&quot;authors_can_email_students&quot;:&quot;false&quot;,&quot;authors_can_manage_coupons&quot;:&quot;false&quot;,&quot;teachable_accounts_enabled&quot;:&quot;true&quot;,&quot;teachable_payments_enabled&quot;:&quot;false&quot;,&quot;authors_can_import_students&quot;:&quot;false&quot;,&quot;authors_can_publish_courses&quot;:&quot;false&quot;,&quot;internal_subscriptions_beta&quot;:&quot;true&quot;,&quot;recaptcha_enabled_on_signup&quot;:&quot;true&quot;,&quot;tax_form_collection_enabled&quot;:&quot;false&quot;,&quot;display_vat_inclusive_prices&quot;:&quot;true&quot;,&quot;single_page_checkout_enabled&quot;:&quot;true&quot;,&quot;authors_can_set_course_prices&quot;:&quot;false&quot;,&quot;affiliate_cookie_duration_days&quot;:&quot;365&quot;,&quot;authors_can_issue_certificates&quot;:&quot;false&quot;,&quot;store_student_cards_separately&quot;:&quot;true&quot;,&quot;authors_can_manage_certificates&quot;:&quot;false&quot;,&quot;authors_can_manage_course_pages&quot;:&quot;false&quot;,&quot;block_default_gateway_purchases&quot;:&quot;true&quot;,&quot;disable_js_course_event_tracking&quot;:&quot;false&quot;,&quot;exclusive_vat_on_custom_gateways&quot;:&quot;true&quot;,&quot;send_certificate_issuance_emails&quot;:&quot;true&quot;,&quot;owner_teachable_accounts_required&quot;:&quot;true&quot;,&quot;prevent_payment_plan_cancellation&quot;:&quot;true&quot;,&quot;send_subscription_reminder_emails&quot;:&quot;true&quot;,&quot;automatically_add_disqus_attachments&quot;:&quot;true&quot;,&quot;recalc_course_pct_on_lecture_publish&quot;:&quot;false&quot;,&quot;send_confirmation_instructions_emails&quot;:&quot;true&quot;,&quot;send_limited_time_unenrollment_emails&quot;:&quot;true&quot;,&quot;turn_off_myteachable_sign_up_branding&quot;:&quot;false&quot;}" data-accessible-features="[&quot;bulk_enroll_students&quot;,&quot;manually_importing_users&quot;,&quot;native_certificates&quot;,&quot;earnings_statements&quot;,&quot;teachable_u&quot;,&quot;course_compliance&quot;,&quot;page_editor_v2&quot;,&quot;page_editor_v2_only&quot;,&quot;certificates_editor_v2&quot;,&quot;drip_content&quot;,&quot;custom_domain&quot;,&quot;coupons&quot;,&quot;graded_quizzes&quot;,&quot;power_editor&quot;,&quot;email&quot;,&quot;course_reports&quot;,&quot;webhooks&quot;,&quot;integrations&quot;,&quot;zapier_action_create_user&quot;,&quot;teachable_payments_payout_view&quot;,&quot;pbc&quot;,&quot;upsells&quot;,&quot;facebook_pixel&quot;,&quot;user_search_filters&quot;,&quot;multiple_course_pages&quot;,&quot;proration_upgrade_flow&quot;,&quot;limited_time_enrollments&quot;,&quot;new_device_confirmation&quot;,&quot;elasticsearch_users&quot;,&quot;elasticsearch_transactions&quot;,&quot;reset_progress&quot;,&quot;fraud_warnings&quot;,&quot;paypal_through_tp&quot;]" data-course-data="{&quot;is_lecture_order_enforced&quot;:null,&quot;is_minimum_quiz_score_enforced&quot;:null,&quot;is_video_completion_enforced&quot;:null,&quot;minimum_quiz_score&quot;:null,&quot;maximum_quiz_retakes&quot;:null}" data-course-url="https://biaheza.teachable.com/courses/674086" data-course-id="674086" /><meta id="analytics-keys" name="analytics" data-analytics="{}" />
-    
-    <div class="root" onclick="offMenu(event)">
-      
-        <!-- HEADER -->
-<a id="top"></a>
-
-<style id="ncs">
-  :root {
-    
-    --header_width: 960px;
-  }
-</style>
-
-<header id="header" class="header header-sticky">
-  <!-- Navbar -->
-  <nav
-    class="navbar is-not-signed-in is-homepage navbar-course-hero  at-top"
-    id='navbar'
-    role='navigation'>
-    <div class='navbar__header'>
-      <!-- Site logo -->
-      
-        <a class='navbar__title' href='https://biaheza.teachable.com'>
-        
-        </a>
-      
-      <!-- Header Menu -->
-      <div class="navbar__menu">
-          <button for="f-toggle" tabindex="0" role="button" id="hamburger" class="hamburger" aria-label="Toggle navigation"
-          onclick="toggleMenu('hamburger-menu')">
-          <span></span>
-          </button>
-          <ul class='navbar__menu__list menu hidden' id="hamburger-menu" role="menu" aria-describedby="hamburger" tabindex="0">
-  
-
-  
-
-  <!-- If more than 5 links, collapse the rest in a dropdown -->
-  
-  
-  
-    
-      <li>
-        <a href='/sign_in'>
- 
-        </a>
-      </li>
-    
-    
-      <li>
-        <a href='/sign_up'>
-
-        </a>
-      </li>
-    
-  
-</ul>
-
-      </div>
-    </div>
-  </nav>
-</header>
-
-      
-      <main class='view-school page-layout-v2 main'>
-        
-  
-
-  
-
-  
-
-  
-    <div id="blocks" class="blocks-page blocks-page-course_sales_page_v2 ">
-  
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539523-alignment { text-align: center; } .b-14539523-image_overlay { opacity: 1; } .b-14539523-heading_text_color { color: #fefdff; } .b-14539523-subheading_text_color { color: #fcf6ff; }</style>
-
-      
-        <div class="course-block block banner  " id="block-14539523">
-      
-
-        
-
-
-
-
-
-
-
-  <style>
-    
-      .banner .b-14539523-heading_text_color {
-        color: #fefdff
-      }
-    
-
-    
-      .banner .b-14539523-subheading_text_color {
-        color: #fcf6ff
-      }
-    
-    @media screen and (min-width: 768px) {
-      . {
-        padding-top: px;
-      }
-      . {
-        padding-bottom: px;
-      }
-    }
-    .bl {
-      width: 100%;
-    }
-  </style>
-
-<section class="banner ">
-  <img
-    src='https://www.filepicker.io/api/file/EiVfchkTS52B9F5OuyiP'
-    alt=''
-    data-target="block.data.image_url block.data.alt_text"
-    class=b-14539523-image_overlay
-  />
-  <div class="bl">
-    <div class="banner__inner b-14539523-alignment   ">
-      <div class="banner__heading-group">
-        
-          <div data-target="block.data.heading_text" class="header b-14539523-heading_text_color rich-text">
-            <h1>BIAHEZA'S DROPSHIPPING COURSE</h1>
-          </div>
-        
-        
-          <div data-target="block.data.subheading_text" class="subheader b-14539523-subheading_text_color rich-text">
-            <h4>A step by step video guide in which I explain my entire process for building, marketing and scaling Shopify dropshipping stores in the current climate of Ecommerce</h4>
-          </div>
-        
-      </div>
-      
-        <div class="banner__button-wrapper">
-          <a href='https://payhip.com/b/iZl2'
-            target="_blank" rel="noopener"
-          >
-            <button
-              class='banner__button base-button'
-              data-target="block.data.button_text"
-            >
-              Enroll for $99
-            </button>
-          </a>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      
-
-      
-        <div class="course-block block custom_html  " id="block-14539519">
-      
-
-        <!-- if no liquid block data saved we render a default state -->
-
-<style>
-  .blank-template-body {
-  color: #36414D;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  opacity: 0.6;
-  width: 750px;
-  text-align: left;
-  }
-</style>
-
-
-  
-    
-<iframe src="https://player.vimeo.com/video/365614853" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  
-
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539515-text_color { color: #36414D; } .b-14539515-background_color { background-color: #FFFFFF; } .b-14539515-heading_text_color { color: #36414D; }</style>
-
-      
-        <div class="course-block block text  " id="block-14539515">
-      
-
-        
-
-
-
-
-
-<style>
-
-  .block__text .b-14539515-text_color {
-    color: #36414D
-  }
-
-
-
-
-
-  .block__text .b-14539515-heading_text_color h1,
-  .block__text .b-14539515-heading_text_color h2,
-  .block__text .b-14539515-heading_text_color h3,
-  .block__text .b-14539515-heading_text_color h4,
-  .block__text .b-14539515-heading_text_color h5,
-  .block__text .b-14539515-heading_text_color h6 {
-    color: #36414D
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-}
-</style>
-
-<section class='container bl block__text rich-text   b-14539515-background_color'>
-  <div class="block__text-wrapper  b-14539515-heading_text_color b-14539515-text_color" data-target="block.data.body">
-    <p><strong style="background-color: inherit; color: inherit;">WHO THIS COURSE IS FOR:</strong></p><p>With this course my whole goal is to help you get your first big break with dropshipping as I truly believe that this stage is the biggest roadblock and where most people who try dropshipping fail. After you have your first success with dropshipping, it often becomes exponential as you begin to understand why things work the way they do and can duplicate your initial results. This is why I built a course focused towards people who are just starting out with dropshipping or have previously tried it but were not successful with it. I try my best to connect all the dots for you and show you what you actually need to do in order to succeed with this once in a lifetime opportunity of a business!!</p>
-  </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539520-text_color { color: #36414D; } .b-14539520-heading_color { color: #36414D; } .b-14539520-text_alignment { text-align: left; } .b-14539520-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539520">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539520-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539520-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539520-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539520-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539520-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539520-heading_color b-14539520-text_color b-14539520-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/0IHy7sZdQhaBPpIJtkFL'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <h4>This is a screenshot from one of my best performing stores, as you can see I don&apos;t just focus on making a quick buck as this store has been running for over a year now and still does around $50,000 per month to this day!</h4><h4><br></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539521-text_color { color: #36414D; } .b-14539521-heading_color { color: #36414D; } .b-14539521-text_alignment { text-align: left; } .b-14539521-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539521">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539521-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539521-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539521-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539521-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539521-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539521-heading_color b-14539521-text_color b-14539521-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/Llih9bBAQmit3aLFHEUt'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <p><br></p><h4><span style="color: rgb(54, 65, 77);">In the course I reveal exactly how I started this dropshipping store and how I duplicate these results with new stores that I start today!</span></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539522-text_color { color: #36414D; } .b-14539522-heading_color { color: #36414D; } .b-14539522-text_alignment { text-align: left; } .b-14539522-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539522">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539522-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539522-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539522-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539522-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539522-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539522-heading_color b-14539522-text_color b-14539522-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/Iz0AmqdQaezpWEF4JVQV'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <h4>This is the most revealing piece of content I have ever put out, as I even reveal some of my personal best selling products</h4><h4><br></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539517-text_color { color: #36414D; } .b-14539517-heading_color { color: #36414D; } .b-14539517-text_alignment { text-align: left; } .b-14539517-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539517">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539517-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539517-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539517-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539517-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539517-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539517-heading_color b-14539517-text_color b-14539517-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/lsiAnSLAR9WgvWFNeRzL'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <h4>My process for starting these stores is fairly similar every time, meaning you can use these exact steps to start your own</h4><h4><br></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539518-text_color { color: #36414D; } .b-14539518-heading_color { color: #36414D; } .b-14539518-text_alignment { text-align: left; } .b-14539518-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539518">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539518-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539518-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539518-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539518-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539518-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539518-heading_color b-14539518-text_color b-14539518-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/211snexNTcKEeM6vgESQ'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <h4>Inside the course I talk about both my Facebook and Instagram theme page marketing strategies. This particular store was advertised strictly through Instagram theme pages!
-		  ​What Products ACTUALLY Work for Dropshipping
-		  
-The Software I Use to Find Winning Products
-
-​Five Winning Product Examples + Revealing Products I Have Personally Dropshipped
-​Creating a Brand New Shopify Website From Scratch Step by Step
-
-​Where to Get Content for Your Store
-
-​Setting up the Shipping and Legal Pages
-
-​Building a Proper Instagram Company Page From Scratch
-
-Where to Find Content for Your Company Page
-
-​What is the Facebook Pixel and How to Install it
-
-​My FULL Instagram Theme Page Marketing Strategy
-
-Choosing the Right Pages to Advertise on
-
-​How to use Facebook Ads
-
-​How I Target and Scale my Facebook Ads (Full Strategy)
-
-​How to Deal With Taxes
-
-​Setting up Customer 
-
-Testimonials:
-
-
-
-
-
-
-
-
-
-
-
-
-
-Get Immediate Access:
-
-This is a screenshot from one of my best performing stores, as you can see I don't just focus on making a quick buck as this store has been running for over a year now and still does around $50,000 per month to this day!
-
-In the course I reveal exactly how I started this dropshipping store and how I duplicate these results with new stores that I start today!
-
-This is the most revealing piece of content I have ever put out, as I even reveal some of my personal best selling products
-
-My process for starting these stores is fairly similar every time, meaning you can use these exact steps to start your own
-
-Inside the course I talk about both my Facebook and Instagram theme page marketing strategies. This particular store was advertised strictly through Instagram theme pages!
-
-COURSE CURRICULUM
- What Products Actually Work for Dropshipping
- The Software I Use to Find Current Winning Products
-​Five Winning Product Examples
-​Products I've Personally Dropshipped
-​Creating a New Shopify Store From Scratch Step by Step
-​Where to Get Content For Your Store
-​Setting up the Shipping and Legal Pages
-​Building a Proper Company Instagram Page From Scratch
-​Where to Find Content for Your Company Page
-​What is the Facebook Pixel and How to Install it
-​My Full Instagram Theme Page Marketing Strategy
-​Choosing the Right Theme Page to Advertise On
-​How to Use Facebook Ads
-​How I Target and Scale my Facebook Ads (Full Strategy)
-​How to Deal with Taxes
-​Setting Up Customer
-</h4><h4><br></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539516-alignment { text-align: center; } .b-14539516-image_overlay { opacity: 0.9; } .b-14539516-heading_text_color { color: #ffffff; } .b-14539516-subheading_text_color { color: #36414D; }</style>
-
-      
-        <div class="course-block block banner  " id="block-14539516">
-      
-
-        
-
-
-
-
-
-
-
-  <style>
-    
-      .banner .b-14539516-heading_text_color {
-        color: #ffffff
-      }
-    
-
-    
-      .banner .b-14539516-subheading_text_color {
-        color: #36414D
-      }
-    
-    @media screen and (min-width: 768px) {
-      . {
-        padding-top: px;
-      }
-      . {
-        padding-bottom: px;
-      }
-    }
-    .bl {
-      width: 100%;
-    }
-  </style>
-
-<section class="banner ">
-  <img
-    src='https://www.filepicker.io/api/file/uYrQwAshTtG4ILigyY0U'
-    alt=''
-    data-target="block.data.image_url block.data.alt_text"
-    class=b-14539516-image_overlay
-  />
-  <div class="bl">
-    <div class="banner__inner b-14539516-alignment   ">
-      <div class="banner__heading-group">
-        
-          <div data-target="block.data.heading_text" class="header b-14539516-heading_text_color rich-text">
-            <h1>GET STARTED</h1>
-          </div>
-        
-        
-          <div data-target="block.data.subheading_text" class="subheader b-14539516-subheading_text_color rich-text">
-            <h4></h4>
-          </div>
-        
-      </div>
-      
-        <div class="banner__button-wrapper">
-          <a href='https://payhip.com/b/iZl2'
-            target="_blank" rel="noopener"
-          >
-            <button
-              class='banner__button base-button'
-              data-target="block.data.button_text"
-            >
-              $99.00
-            </button>
-          </a>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539514-text_color { color: #36414D; } .b-14539514-background_color { background-color: #FFFFFF; } .b-14539514-heading_text_color { color: #36414D; }</style>
-
-      
-        <div class="course-block block text  " id="block-14539514">
-      
-
-        
-
-
-
-
-
-<style>
-
-  .block__text .b-14539514-text_color {
-    color: #36414D
-  }
-
-
-
-
-
-  .block__text .b-14539514-heading_text_color h1,
-  .block__text .b-14539514-heading_text_color h2,
-  .block__text .b-14539514-heading_text_color h3,
-  .block__text .b-14539514-heading_text_color h4,
-  .block__text .b-14539514-heading_text_color h5,
-  .block__text .b-14539514-heading_text_color h6 {
-    color: #36414D
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-}
-</style>
-
-<section class='container bl block__text rich-text   b-14539514-background_color'>
-  <div class="block__text-wrapper  b-14539514-heading_text_color b-14539514-text_color" data-target="block.data.body">
-    
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-
-  
-    </div>
-  
-
-
-
-
-
-
-
-
-      </main>
-      
-        
-<style id="footerStyles">
-  :root {
-    --footer_width: 960px;
-  }
-</style>
-<footer class=''>
-  <div class="footer">
-    <div class='footer__wrapper'>
-      <div class='footer__inner'>
-        <ul class="footer__list">
-          <li class="footer__copyright">
-            &copy;
-            
-          </li>
-          
-              
-                  <li>
-                      <a href='https://biaheza.teachable.com/p/refunds' target=''>
-                      
-                      </a>
-                  </li>
-              
-          
-        </ul>
-        <ul class="footer__list legal-links">
-          <li>
-            <a href="/p/terms">
-        
-            </a>
-          </li>
-          <li>
-            <a href="/p/privacy">
-            </a>
-          </li>
-          
-            <li>
-              
-                <a class='powered-by' href='https://teachable.com/teach-online/?src=school_footer'>
-                  <span class="powered-by-text"></span><img src="https://fedora.teachablecdn.com/assets/footer/teachable-logomark-white-31d2296978598bacace50e6d48a2e1223c20a9b074af424acdd465676f81560f.svg" class='powered-by-logo'  target="_blank" rel="noopener" alt="Teachable">
-                </a>
-              
-              </li>
-            
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-      
-    </div>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-      if (!Element.prototype.closest) {
-        Element.prototype.closest = function(s) {
-          let el = this;
-          do {
-            if (el.matches(s)) return el;
-            el = el.parentElement || el.parentNode;
-          } while (el !== null && el.nodeType === 1);
-          return null;
-        };
-      }
-      const offMenu = event => {
-      if (event.target.closest('.navbar__menu')) return
-      document
-        .querySelectorAll('.menu')
-        .forEach(item => {
-          item.classList.add('hidden')
-          item.setAttribute('aria-hidden', 'true')
-        })
-      }
-      const toggleMenu = id => {
-  const el = document.getElementById(id)
-  if (el.classList.contains('hidden')) {
-    document
-      .querySelectorAll('.inner-menu')
-      .forEach(item => {
-        item.classList.add('hidden')
-        item.setAttribute('aria-hidden', 'true')
-      })
-    el.classList.remove('hidden')
-    el.setAttribute('aria-hidden', 'false')
-  } else {
-    el.classList.add('hidden')
-    el.setAttribute('aria-hidden', 'true')
-  }
-  !el.classList.contains('hidden') && el.focus()
-}
-
-      const domBody = document.body
-      const usingMouse = 'using-mouse'
-      domBody.addEventListener('mousedown', () => {
-        domBody.classList.add(usingMouse)
-      })
-      domBody.addEventListener('keydown', () => {
-        domBody.classList.remove(usingMouse)
-      })
-
-      const headerEl = document.querySelector('#navbar')
-      const topHook = document.querySelector('#top')
-      if (
-        "IntersectionObserver" in window
-      ) {
-        const observer = new IntersectionObserver(entries => {
-          if (entries[0].boundingClientRect.y < 0) {
-            headerEl.classList.remove('at-top')
-          } else {
-            headerEl.classList.add('at-top')
-          }
-        },{threshold: 1});
-        observer.observe(topHook)
-      }
-    </script>
-  </body>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/jquery/jquery.js' id='jquery-core-js'></script>
+<link rel="https://api.w.org/" href="https://www.hanyhussain.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.hanyhussain.com/wp-json/wp/v2/pages/11484" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hanyhussain.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.hanyhussain.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.1" />
+<link rel="canonical" href="https://www.hanyhussain.com/funnelvideoseries3/" />
+<link rel='shortlink' href='https://www.hanyhussain.com/?p=11484' />
+<link rel="alternate" type="application/json+oembed" href="https://www.hanyhussain.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hanyhussain.com%2Ffunnelvideoseries3%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.hanyhussain.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hanyhussain.com%2Ffunnelvideoseries3%2F&#038;format=xml" />
+<style type="text/css" id="tve_global_variables">:root{--tcb-color-0:rgb(43, 93, 170);}</style>        <script type="text/javascript">
+            /* <![CDATA[ */
+            var sf_position = '0';
+            var sf_templates = "<a href=\"{search_url_escaped}\"><span class=\"sf_text\">View All Results<\/span><\/a>";
+            var sf_input = '.search-live';
+            jQuery(document).ready(function(){
+                jQuery(sf_input).ajaxyLiveSearch({"expand":false,"searchUrl":"https:\/\/www.hanyhussain.com\/?s=%s","text":"Search","delay":500,"iwidth":180,"width":315,"ajaxUrl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","rtl":0});
+                jQuery(".live-search_ajaxy-selective-input").keyup(function() {
+                    var width = jQuery(this).val().length * 8;
+                    if(width < 50) {
+                        width = 50;
+                    }
+                    jQuery(this).width(width);
+                });
+                jQuery(".live-search_ajaxy-selective-search").click(function() {
+                    jQuery(this).find(".live-search_ajaxy-selective-input").focus();
+                });
+                jQuery(".live-search_ajaxy-selective-close").click(function() {
+                    jQuery(this).parent().remove();
+                });
+            });
+            /* ]]> */
+        </script>
+    <link rel="shortcut icon" href="https://www.hanyhussain.com/wp-content/uploads/2017/11/favicon.png" type="image/x-icon" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PW694ZR');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="90224a33-9e60-47d3-a43d-05aa7035170f",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script><script type="text/javascript">
+/* <![CDATA[ */
+var userRating = {"ajaxurl":"https://www.hanyhussain.com/wp-admin/admin-ajax.php" , "your_rating":"" , "nonce":"c66fb79461"};
+var userLike = {"ajaxurl":"https://www.hanyhussain.com/wp-admin/admin-ajax.php" , "nonce":"c66fb79461"};
+/* ]]> */
+var bdaia_theme_uri = 'https://www.hanyhussain.com/wp-content/themes/woohoo';
+</script>
+			<style type="text/css" class="tve_custom_style">@import url("//fonts.googleapis.com/css?family=Lalezar:400,&subset=latin");@import url("//fonts.googleapis.com/css?family=Lato:400,700,100,300&subset=latin");@media (min-width: 300px){[data-css="tve-u-15f622f3ecb"] { max-width: 85%; float: none; margin-left: auto !important; margin-right: auto !important; }:not(#tve) [data-css="tve-u-15f622bc5e9"]:hover .tcb-button-link { background-image: none !important; background-color: rgb(52, 136, 173) !important; }[data-css="tve-u-15f622bc5e9"] { display: block; max-width: 71%; width: 71%; min-width: 100%; }[data-css="tve-u-15f622bc5e9"] .tcb-button-link { min-height: 85.7143px; font-size: 2em; padding-top: 0px; padding-bottom: 0px; border-bottom: 4px solid rgb(15, 147, 124); border-radius: 4px; background-color: rgb(48, 99, 122) !important; background-image: none !important; }[data-css="tve-u-15f622ac5fc"] + div { clear: none; }[data-css="tve-u-15f622ac5fc"] { float: none; margin-left: auto; margin-right: auto; width: 246px; }[data-css="tve-u-15f6228dc82"] + div { clear: none; }[data-css="tve-u-15f6228dc82"] { float: none; margin-left: auto; margin-right: auto; width: 254px; }:not(#tve) [data-css="tve-u-15f6227cce9"] { color: rgb(31, 30, 30) !important; font-size: 21px !important; }[data-css="tve-u-15f6227b732"] { font-family: Tahoma, Geneva, sans-serif !important; }[data-css="tve-u-15f5dc26b34"] { font-family: "Comic Sans MS", cursive, sans-serif !important; }:not(#tve) [data-css="tve-u-15f5dc24139"] { color: rgb(14, 14, 14) !important; font-size: 36px !important; }[data-css="tve-u-15f5d426f3d"] { margin-top: 0px !important; }[data-css="tve-u-15f5d3e7eb3"] { font-family: Tahoma, Geneva, sans-serif !important; }[data-css="tve-u-15f5d3da739"] { text-transform: uppercase !important; font-family: Tahoma, Geneva, sans-serif !important; }[data-css="tve-u-15f5d3d44d7"] { font-family: Tahoma, Geneva, sans-serif !important; }[data-css="tve-u-15f5d3ca4b7"] { text-transform: uppercase !important; font-family: Tahoma, Geneva, sans-serif !important; }[data-css="tve-u-15f5d3bd4aa"] { font-family: Tahoma, Geneva, sans-serif !important; }[data-css="tve-u-15f5d3b41fa"] { text-transform: uppercase !important; font-family: Tahoma, Geneva, sans-serif !important; }[data-css="tve-u-15f5d060f94"] { min-height: 7px; }[data-css="tve-u-15f5d0510ae"] { max-width: 85%; float: none; margin-top: -365px !important; margin-left: auto !important; margin-right: auto !important; padding-bottom: 0px !important; }[data-css="tve-u-15f5cff7ce0"] { margin-top: 26px !important; }:not(#tve) [data-css="tve-u-15f5cfd07b8"] { font-weight: 400; color: rgb(207, 202, 202) !important; font-family: Lalezar !important; font-size: 34px !important; }:not(#tve) [data-css="tve-u-15de2dd0e01"] { font-family: inherit !important; }[data-css="tve-u-15dbedb23bb"] { line-height: 30px !important; }[data-css="tve-u-15dbeda4e61"] { max-width: 1070px; margin-left: auto !important; margin-right: auto !important; padding: 20px !important; }[data-css="tve-u-15dbed94414"] { margin-bottom: -10px !important; }[data-css="tve-u-15dbed9108a"] { background-color: rgb(51, 51, 51) !important; }[data-css="tve-u-15dbed3c209"] { min-height: 182px; }[data-css="tve-u-15dbed29fb3"] { min-height: 182px; }[data-css="tve-u-15dbecbb0ea"] { line-height: 30px !important; }:not(#tve) [data-css="tve-u-15dbecbb0ea"] { font-family: Lato; font-weight: 300; }[data-css="tve-u-15dbecb158a"] { max-width: 188px; margin-left: auto !important; margin-right: auto !important; padding-bottom: 1px !important; margin-bottom: 10px !important; }[data-css="tve-u-15dbec16c60"] { line-height: 30px !important; }:not(#tve) [data-css="tve-u-15dbec16c60"] { font-family: Lato; font-weight: 400; font-size: 24px !important; color: rgb(51, 51, 51) !important; }[data-css="tve-u-15dbebcd8a7"] { padding-top: 1px !important; margin-top: 0px !important; margin-bottom: 0px !important; }[data-css="tve-u-15dbe9f39d1"] { clip-path: none; -webkit-clip-path: none;  background-image: none !important; background-color: rgb(227, 227, 227) !important; }[data-css="tve-u-15dbe833ba3"] { background-image: url("https://www.hanyhussain.com/wp-content/uploads/2017/10/video-course-ps-bg-2.jpg") !important; background-size: cover !important; background-position: 0px 0px !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-15dbe827ecc"] { padding: 20px !important; margin-bottom: 0px !important; }[data-css="tve-u-15dbe8203d5"] { max-width: 1070px; }#tcb_landing_page h1 strong { font-weight: 700; }#tcb_landing_page p strong, #tcb_landing_page li strong { font-weight: 700; }[data-css="tve-u-15dbe77cc9a"] { background-image: linear-gradient(rgb(38, 52, 84), rgb(38, 52, 84)) !important; background-size: auto !important; background-position: 0px 0px !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }#tcb_landing_page h3 { font-family: Lato; color: rgb(51, 51, 51); font-size: 26px; line-height: 34px; }#tcb_landing_page h2 { font-family: Lato; color: rgb(51, 51, 51); font-size: 42px; line-height: 55px; }#tcb_landing_page h1 { font-family: Lato; font-weight: 300; color: rgb(255, 255, 255); font-size: 54px; line-height: 70px; }#tcb_landing_page p, #tcb_landing_page li { font-family: Lato; font-weight: 300; color: rgb(102, 102, 102); font-size: 18px; line-height: 30px; }[data-css="tve-u-15dbe85dae5"] { max-width: 1070px; min-height: 625px !important; }[data-css="tve-u-15dbe949f04"] { padding: 20px 20px 1px !important; margin-top: 0px !important; }[data-css="tve-u-15dbeb63045"] { max-width: 1070px; }[data-css="tve-u-15dbeb977c5"] { padding-left: 20px !important; padding-right: 20px !important; margin-bottom: 0px !important; padding-bottom: 20px !important; margin-top: -36px !important; }[data-css="tve-u-15dbeba2cce"] { background-image: none !important; background-color: rgb(197, 198, 201) !important; }[data-css="tve-u-15dbebe3c7f"] { box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 12px; background-color: rgb(227, 227, 227) !important; border: 10px solid rgb(255, 255, 255) !important; }[data-css="tve-u-15dbed7df05"] { padding-top: 1px !important; margin-top: 0px !important; margin-bottom: 0px !important; }[data-css="tve-u-15dbed82056"] { padding-top: 1px !important; margin-top: 0px !important; margin-bottom: 0px !important; }[data-css="tve-u-15dbee4c9d7"] { min-height: 182px; }[data-css="tve-u-15dc1673bc3"] + div { clear: both; }[data-css="tve-u-15dc1673bc3"] { font-size: 30px; color: rgb(182, 49, 49); width: 30px; height: 30px; top: 0px; left: -112px; position: absolute; margin-top: 0px !important; padding-left: 151px !important; padding-top: 38px !important; }[data-css="tve-u-15dc16888ad"] { max-width: 236px; margin-top: 37px !important; padding-bottom: 10px !important; margin-left: auto !important; margin-right: auto !important; padding-left: 19px !important; }[data-css="tve-u-15dc16a5419"] { margin-bottom: 0px !important; }[data-css="tve-u-15dc16a5419"].thrv-divider .tve_sep { border-width: 1px; border-color: rgba(255, 255, 255, 0.14); }[data-css="tve-u-15de281d4f8"] { background-image: none !important; background-color: rgb(255, 255, 255) !important; }[data-css="tve-u-15de2d3e0e0"] { max-width: 1070px; }}@media (max-width: 1023px){[data-css="tve-u-15dbe85dae5"] { min-height: 625px !important; }[data-css="tve-u-15dbeb63045"] { min-height: 413px !important; }:not(#tve) [data-css="tve-u-15f5cfd07b8"] { font-size: 19px !important; }:not(#tve) [data-css="tve-u-15de2dd0e01"] { font-size: 35px !important; }[data-css="tve-u-15dbed7df05"] { margin-bottom: 20px !important; }[data-css="tve-u-15dc16a5419"] { margin-bottom: 1px !important; }}@media (max-width: 767px){[data-css="tve-u-15f6227b732"] { font-family: Tahoma, Geneva, sans-serif !important; }:not(#tve) [data-css="tve-u-15f6227cce9"] { font-size: 15px !important; }[data-css="tve-u-15f5dc26b34"] { font-family: Tahoma, Geneva, sans-serif !important; }:not(#tve) [data-css="tve-u-15f5dc24139"] { font-size: 17px !important; }[data-css="tve-u-15dbeb63045"] { min-height: 200px !important; }[data-css="tve-u-15dbe85dae5"] { min-height: 355px !important; }[data-css="tve-u-15f5d0510ae"] { max-width: 100%; margin-top: -114px !important; }:not(#tve) [data-css="tve-u-15f5cfd07b8"] { font-size: 16px !important; }[data-css="tve-u-15dbed82056"] { margin-bottom: 20px !important; }[data-css="tve-u-15dc16a5419"] { margin-bottom: 0px !important; }[data-css="tve-u-15de2dd0e01"] { line-height: 37px !important; }:not(#tve) [data-css="tve-u-15de2dd0e01"] { font-size: 17px !important; }}</style>
+			<style type="text/css" id="tve_head_custom_css" class="tve_user_custom_style">.thrv_text_element p { margin: 0;}
+.thrv_heading h1,h2,h3 {margin: 0;}</style><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PW694ZR');</script>
+<!-- End Google Tag Manager --><script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="90224a33-9e60-47d3-a43d-05aa7035170f",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script>
+		<style type="text/css">
+			html {
+				height: auto;
+			}
+
+			html.tcb-editor {
+				overflow-y: initial;
+			}
+
+			body:before, body:after {
+				height: 0 !important;
+			}
+
+			.thrv_page_section .out {
+				max-width: none
+			}
+
+			.tve_wrap_all {
+				position: relative;
+			}
+
+			/* Content Width - inherit Content Width directly from LP settings */
+			.thrv-page-section[data-inherit-lp-settings="1"] .tve-page-section-in {
+				max-width: 1080px !important;
+				max-width: var(--page-section-max-width) !important;
+			}
+
+			body.tcb-full-header .thrv_header,
+			body.tcb-full-footer .thrv_footer {
+				width: 100vw;
+				left: 50%;
+				right: 50%;
+				margin-left: -50vw !important;
+				margin-right: -50vw !important;
+			}
+		</style>
+
+	</head>
+		<body class="rtl page-template-default page page-id-11484 wp-embed-responsive tve_lp" style="" data-css="tve-u-15dbe77cc9a">
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW694ZR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<div class="wrp cnt bSe" style="display: none">
+			<div class="awr"></div>
+		</div>
+		<div class="tve_wrap_all" id="tcb_landing_page">
+			<div class="tve_post_lp tve_lp_tcb2-video-course-lead-generation tve_lp_template_wrapper" style="">
+								<div id="tve_flt" class="tve_flt tcb-style-wrap"><div id="tve_editor" class="tve_shortcode_editor tar-main-content" data-post-id="11484"><div class="thrv_wrapper thrv-page-section" data-css="tve-u-15dbe949f04" style="">
+<div class="tve-page-section-out" data-css="tve-u-15dbe833ba3"></div>
+<div class="tve-page-section-in tve_empty_dropzone" data-css="tve-u-15dbe85dae5" style=""><div class="thrv_wrapper thrv_text_element" data-tag="h1"><h1 data-css="tve-u-15de2dd0e01" style="text-align: center;">لقد تم حجز مقعدك الخـــاص في التدريب المجــاني بنجاح</h1></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-15f5cff7ce0"><p data-css="tve-u-15f5cfd07b8" style="text-align: center;">مع تحـــــياتي لك بالتــــوفيق</p></div><div class="thrv_wrapper thrv-divider" data-style="tve_sep-1" data-thickness="1" data-color="rgba(255, 255, 255, 0.14)" data-css="tve-u-15dc16a5419">
+<hr class="tve_sep tve_sep-1">
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section" data-css="tve-u-15dbeb977c5" style="">
+<div class="tve-page-section-out" data-css="tve-u-15dbe9f39d1"></div>
+<div class="tve-page-section-in tve_empty_dropzone" data-css="tve-u-15dbeb63045"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-15f5d0510ae">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone" data-css="tve-u-15f5d060f94"><div class="thrv_wrapper thrv_custom_html_shortcode"><center>
+<div class="fluid-width-video-wrapper" style="padding-top: 56.0938%;"><iframe src="https://player.vimeo.com/video/462141575" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid610126"></iframe></div>
+</center><div class="tve_iframe_cover"></div><div class="tve_iframe_cover"></div></div></div>
+</div></div>
+
+</svg></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-15dc16888ad"><p data-css="tve-u-15dbec16c60" style="text-align: center;"><span data-css="tve-u-15f5d3da739" style="text-transform: uppercase; font-family: Tahoma, Geneva, sans-serif;"></span></p></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-15dbecb158a"><p data-css="tve-u-15dbecbb0ea" style="text-align: center;"><span data-css="tve-u-15f5d3e7eb3" style="font-family: Tahoma,Geneva,sans-serif;"></span></p></div></div>
+</div></div></div></div></div></div>
+</div><div class="thrv_wrapper thrv-page-section" data-css="tve-u-15dbe827ecc" style="">
+<div class="tve-page-section-out" data-css="tve-u-15de281d4f8"></div>
+<div class="tve-page-section-in tve_empty_dropzone" data-css="tve-u-15de2d3e0e0"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-15f5d426f3d">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_content_reveal" data-after="6" data-redirect-url="" data-css="tve-u-15f622f3ecb">
+<div class="tve_reveal_container tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element" data-tag="h1"><h1 data-css="tve-u-15f5dc24139" style="text-align: center;"><span data-css="tve-u-15f5dc26b34" style="font-family: &quot;Comic Sans MS&quot;, cursive, sans-serif;">SALES FUNNELS MASTERS COURSE </span></h1></div><div class="thrv_wrapper tve_image_caption" data-css="tve-u-15f6228dc82"><span class="tve_image_frame"><img loading="lazy" class="tve_image wp-image-11343" alt="" width="254" height="109" title="logo" data-id="11343" src="https://www.hanyhussain.com/wp-content/uploads/2017/10/logo-1.png"></span></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone"><p data-css="tve-u-15f6227cce9" style="text-align: center;"><span data-css="tve-u-15f6227b732"> كيف تجعل استخدام السيلز فانلز يعطيك أكبر نسبة عـــائدات ممكنه بأقــل المصاريف الممكنه</span></p></div><div class="thrv_wrapper tve_image_caption" data-css="tve-u-15f622ac5fc"><span class="tve_image_frame"><img loading="lazy" class="tve_image wp-image-11500" alt="" width="246" height="142" title="3red-arrows-pointing-down-handwritten" data-id="11500" src="//www.hanyhussain.com/wp-content/uploads/2017/10/3red-arrows-pointing-down-handwritten.jpg"></span></div><div class="thrv_wrapper thrv-button" data-css="tve-u-15f622bc5e9" data-tcb_hover_state_parent="" data-button-style="border_1">
+<a href="https://hussien989.github.io/sfz-4-sales-funnel/" class="tcb-button-link">
+<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text">اشترك الان !</span></span>
+</a>
+</div></div>
+</div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section" data-css="tve-u-15dbed94414">
+<div class="tve-page-section-out" data-css="tve-u-15dbed9108a"></div>
+</div></div></div>			</div>
+						<div class="fr-dropdown-holder tcb-style-wrap"></div>
+		</div>
+						<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-PW694ZR\"
+height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="gotop" title="Go Top"><span class="bdaia-io bdaia-io-chevron-up"></span></div>
+<script>
+    </script><script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/imagesloaded.min.js' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/masonry.min.js' id='masonry-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/jquery/jquery.masonry.min.js' id='jquery-masonry-js'></script>
+<script type='text/javascript' id='tve_frontend-js-extra'>
+/* <![CDATA[ */
+var tve_frontend_options = {"ajaxurl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","is_editor_page":"","page_events":[],"is_single":"1","social_fb_app_id":"612975615541276","dash_url":"https:\/\/www.hanyhussain.com\/wp-content\/plugins\/thrive-visual-editor\/thrive-dashboard","translations":{"Copy":"Copy","empty_username":"ERROR: The username field is empty.","empty_password":"ERROR: The password field is empty.","empty_login":"ERROR: Enter a username or email address.","min_chars":"At least %s characters are needed","no_headings":"No headings found"},"routes":{"posts":"https:\/\/www.hanyhussain.com\/wp-json\/tcb\/v1\/posts"},"post_request_data":[],"ip":"158.140.106.176","current_user":[],"post_id":"11484","post_title":"funnelvideoseries3","post_type":"page","post_url":"https:\/\/www.hanyhussain.com\/funnelvideoseries3\/","is_lp":"tcb2-video-course-lead-generation"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/editor/js/dist/frontend.min.js' id='tve_frontend-js'></script>
+<script type='text/javascript' id='tve-dash-frontend-js-extra'>
+/* <![CDATA[ */
+var tve_dash_front = {"ajaxurl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","force_ajax_send":"1","is_crawler":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/thrive-dashboard/js/dist/frontend.min.js' id='tve-dash-frontend-js'></script>
+<script type='text/javascript' id='woohoo-main-js-extra'>
+/* <![CDATA[ */
+var bd = {"nonce":"c66fb79461","ajaxurl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","is_singular":"1","has_lazy_load":"","bd_lazyload":"1","mobile_topmenu":"","sticky_sidebar":"1","all_lightbox":"1","click_to_comments":"","post_reading_position_indicator":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/themes/woohoo/js/main.js' id='woohoo-main-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/themes/woohoo/js/js-cookie.js' id='js-cookie-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/themes/woohoo/js/search.js' id='bd-search-js'></script>
+<script type="text/javascript">var tcb_post_lists=JSON.parse('[]');</script><script type="text/javascript">/*<![CDATA[*/if ( !window.TL_Const ) {var TL_Const={"security":"992caae21d","ajax_url":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":0,"custom_post_data":{"http_referrer":"https:\/\/www.hanyhussain.com\/funnelvideoseries2\/"},"current_screen":{"screen_type":3,"screen_id":11484},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin"]};} else {ThriveGlobal.$j.extend(true, TL_Const, {"security":"992caae21d","ajax_url":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":0,"custom_post_data":{"http_referrer":"https:\/\/www.hanyhussain.com\/funnelvideoseries2\/"},"current_screen":{"screen_type":3,"screen_id":11484},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin"]})} /*]]> */</script>			</body>
 </html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 12/44 objects using disk
+Page Caching using disk: enhanced 
+Database Caching 2/24 queries in 0.014 seconds using disk
+
+Served from: www.hanyhussain.com @ 2020-09-19 17:11:26 by W3 Total Cache
+-->
